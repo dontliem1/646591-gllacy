@@ -67,24 +67,30 @@
       <section class="slider">
         <h2 class="visually-hidden">Предложения для двоих</h2>
         <ul class="slider-list">
-          <li class="slider-item1">
+          <li class="slider-item">
             <p>Крем-брюле и пломбир с малиновым джемом</p>
             <a href="#" class="btn btn-lg">Давайте оба!</a>
           </li>
-          <li class="slider-item2">
+          <li class="slider-item">
             <p>Шоколадный пломбир и лимонный сорбет</p>
             <a href="#" class="btn btn-lg">Давайте оба!</a>
           </li>
-          <li class="slider-item3">
+          <li class="slider-item">
             <p>Пломбир с помадкой и клубничный щербет</p>
             <a href="#" class="btn btn-lg">Давайте оба!</a>
           </li>
         </ul>
-        <div class="slider-controls">
-          <button class="slider-active" type="button">Первое предложение</button>
-          <button type="button">Второе предложение</button>
-          <button type="button">Третье предложение</button>
-        </div>
+        <ul class="slider-controls">
+          <li class="slider-control">
+            <button class="slider-active" type="button">Первое предложение</button>
+          </li>
+          <li class="slider-control">
+            <button type="button">Второе предложение</button>
+          </li>
+          <li class="slider-control">
+            <button type="button">Третье предложение</button>
+          </li>
+        </ul>
       </section>
       <section class="banners">
         <h2 class="visually-hidden">Акции</h2>
@@ -104,28 +110,28 @@
       <section class="hits">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="hits-list">
-          <li class="hits-item1">
+          <li class="hits-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-1.jpg" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой." width="267" height="267">
             <p class="hit-price">310 ₽<span>/кг</span></p>
             <a class="hit-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hits-item2">
+          <li class="hits-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-2.jpg" alt="Фото сливочно-кофейного мороженого с кусочками шоколада." width="267" height="267">
             <p class="hit-price">380 ₽<span>/кг</span></p>
             <a class="hit-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hits-item3">
+          <li class="hits-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-3.jpg" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада." width="267" height="267">
             <p class="hit-price">355 ₽<span>/кг</span></p>
             <a class="hit-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hits-item4">
+          <li class="hits-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-4.jpg" alt="Фото сливочного мороженого крем-брюле с карамельной подливкой." width="267" height="267">
             <p class="hit-price">415 ₽<span>/кг</span></p>
@@ -138,10 +144,10 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="features-lead">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="features-list">
-          <li class="feature-item1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="feature-item2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-          <li class="feature-item3">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="feature-item4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+          <li class="feature-ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="feature-cow">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="feature-eco">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="feature-thermometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
       <article class="blog">
@@ -171,14 +177,26 @@
         <li class="social-vkontakte"><a href="#">ВКонтакте</a></li>
       </ul>
       <ul class="footer-menu">
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <li>
+          <a href="#">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="#">О производстве</a>
+        </li>
+        <li>
+          <a href="#">Наши документы</a>
+        </li>
+        <li>
+          <a href="#">Экологические стандарты</a>
+        </li>
       </ul>
       <ul class="footer-copyright">
-        <li><a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a></li>
-        <li>Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</li>
+        <li>
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"> Профессиональный HTML и CSS, уровень 1</a>
+        </li>
+        <li>
+          Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+        </li>
       </ul>
     </footer>
     <section id="modal-feedback">
