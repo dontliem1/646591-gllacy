@@ -5,7 +5,8 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   color: #fff;
-
+  font-size: 16px;
+  line-height: 22px;
   background-color: #849d8f;
 }
 
@@ -13,19 +14,48 @@ a {
   text-decoration: none;
 }
 
-/*.visually-hidden {*/
-  /*border: 0;*/
-  /*clip: rect(0 0 0 0);*/
-  /*-webkit-clip-path: inset(50%);*/
-  /*clip-path: inset(50%);*/
-  /*height: 1px;*/
-  /*margin: -1px;*/
-  /*overflow: hidden;*/
-  /*padding: 0;*/
-  /*position: absolute;*/
-  /*width: 1px;*/
-  /*white-space: nowrap;*/
-/*}*/
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.popup {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.btn {
+  background-color: #e84d37;
+  background-image: linear-gradient(#f26843, #e74a35);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #f07a63;
+  background-image: linear-gradient(#f58669, #ec6f5e);
+}
+
+.btn:active {
+  background-color: #db5338;
+  background-image: linear-gradient(#d74531, #e1613e);
+}
 
 .site-navigation,
 .catalog-nav,
@@ -53,17 +83,13 @@ a {
   color: #333;
 }
 
-.navigation-current {
+.navigation-current,
+.catalog-current {
   background-color: #d07058;
   color: #fff;
 }
 
-.catalog-nav {
-  background-color: #f8f7f4;
-}
-
-.catalog-nav a {
-  display: block;
+.catalog-nav a:not(.catalog-current) {
   color: #323232;
 }
 
@@ -76,14 +102,138 @@ a {
   background-color: #f6b5a5;
 }
 
-.catalog-current {
-  background-color: #d07058;
-  color: #fff;
-}
-
 .catalog-nav li:first-child::after {
   content: "";
   display: block;
   background-color: rgba(53, 53, 53, .2);
   height: 1px;
+}
+
+.user-navigation input {
+  box-sizing: border-box;
+  border: 1px solid rgba(178, 178, 178, .52);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-navigation input:hover {
+  border: 2px solid rgba(154, 154, 154, .52);
+}
+
+.user-navigation input:focus {
+  border: 2px solid rgba(46, 136, 228, .52);
+}
+
+.user-navigation-item>button:not(.cart-not-empty) {
+  background-color: rgba(255, 255, 255, .2);
+  color: #fff;
+}
+
+.user-navigation-item>button {
+  border: none;
+  font-weight: 500;
+  line-height: 16px;
+  min-height: 32px;
+  min-width: 32px;
+  background-repeat: no-repeat;
+}
+
+.user-navigation-item>button:hover,
+.user-navigation-item>button:focus
+{
+  background-color: #f8f7f4;
+  color: #333;
+}
+
+.user-search {
+  background-image: url("../img/loupe.svg");
+  background-position: 50% 50%;
+  font-size: 0;
+}
+
+.user-search:hover,
+.user-search:focus {
+  background-image: url("../img/loupe-black.svg");
+}
+
+.user-login, .user-cart {
+  font-size: 14px;
+}
+
+.user-login {
+  background-image: url("../img/entrance.svg");
+  background-position: 16px 6px;
+}
+
+.user-login:hover,
+.user-login:focus {
+  background-image: url("../img/entrance-black.svg");
+}
+
+.login-help a {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.login-help a:hover,
+.login-help a:focus {
+  color: #e84d37;
+  border-bottom-color: rgba(236, 89, 60, .3);
+}
+
+.user-cart {
+  background-image: url("../img/basket.svg");
+  background-position: 16px 6px;
+}
+
+.user-cart:hover:not(.cart-not-empty),
+.user-cart:focus:not(.cart-not-empty) {
+  background-image: url("../img/basket-black.svg");
+}
+
+.cart-not-empty {
+  background-image: url("../img/basket-red.svg");
+  background-color: #f8f7f4;
+  color: #333;
+}
+
+.cart-price {
+  color:#999
+}
+
+.cart-table {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.cart-delete {
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+  width: 11px;
+  height: 11px;
+  vertical-align: middle;
+}
+
+.cart-sum {
+  font-size: 15px;
+  line-height: 18px;
+  border-top: 1px solid #cacac7;
+}
+
+.main-header>p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.main-phone {
+  color: #fff;
+  font-size: 22px;
+  line-height: 24px;
 }

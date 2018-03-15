@@ -8,13 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav>
+    <header>
+      <nav class="main-header">
         <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»."></a>
         <ul class="site-navigation">
           <li class="site-navigation-item">
             <a href="catalog.html">Каталог</a>
-            <ul class="catalog-nav">
+            <ul class="popup catalog-nav">
               <li><a href="#"><b>Новинки</b></a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -26,17 +26,17 @@
           <li class="site-navigation-item"><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li>
+          <li class="user-navigation-item">
             <button class="user-search" type="button">Поиск</button>
             <section class="popup popup-search">
               <h2 class="visually-hidden">Строка поиска</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-search">Поиск:</label>
-                <input id="user-search" type="text" name="search" placeholder="Что ищем?">
+                <input id="user-search" name="search" placeholder="Что ищем?">
               </form>
             </section>
           </li>
-          <li>
+          <li class="user-navigation-item">
             <button class="user-login" type="button">Вход</button>
             <section class="popup popup-login">
               <h2 class="visually-hidden">Форма входа</h2>
@@ -49,20 +49,22 @@
                   <label class="visually-hidden" for="user-password">Пароль</label>
                   <input id="user-password" type="password" name="password" placeholder="Пароль">
                 </p>
-                <button class="btn" type="submit">Войти</button>
+                <button class="btn">Войти</button>
                 <p class="login-help">
-                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Забыли пароль?</a><br>
                   <a href="#">Новая регистрация</a>
                 </p>
               </form>
             </section>
           </li>
-          <li>
+          <li class="user-navigation-item">
             <button class="user-cart" type="button">Пусто</button>
           </li>
         </ul>
-        <p>С 10 до 20, ежедневно
-        <a class="main-phone" href="tel:+78124502525">8 812 450-25-25</a></p>
+        <p>
+          С 10 до 20, ежедневно<br>
+          <a class="main-phone" href="tel:+78124502525">8 812 450-25-25</a>
+        </p>
       </nav>
     </header>
     <main class="container">
@@ -193,14 +195,10 @@
           <a href="#">Экологические стандарты</a>
         </li>
       </ul>
-      <ul class="footer-copyright">
-        <li>
-          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy"> Профессиональный HTML и CSS, уровень 1</a>
-        </li>
-        <li>
+      <p class="footer-copyright">
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">Профессиональный HTML и CSS, уровень 1</a>
           Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
-        </li>
-      </ul>
+      </p>
     </footer>
     <section id="modal-feedback">
       <h2>Мы обязательно вам ответим</h2>
@@ -208,7 +206,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-          <input id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+          <input id="feedback-name" name="name" placeholder="Как вас зовут?">
         </p>
         <p>
           <label class="visually-hidden" for="feedback-mail">Электронная почта</label>
@@ -218,7 +216,7 @@
           <label class="visually-hidden" for="feedback-text">Текст сообщения</label>
           <textarea id="feedback-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
         </p>
-        <button class="btn" type="submit">Отправить</button>
+        <button class="btn">Отправить</button>
       </form>
     </section>
   </body>
