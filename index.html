@@ -86,14 +86,14 @@
           </li>
         </ul>
         <ul class="slider-controls">
-          <li class="slider-control">
-            <button class="slider-active" type="button">Первое предложение</button>
+          <li>
+            <button class="slider-control slider-active" type="button">Первое предложение</button>
           </li>
-          <li class="slider-control">
-            <button type="button">Второе предложение</button>
+          <li>
+            <button class="slider-control" type="button">Второе предложение</button>
           </li>
-          <li class="slider-control">
-            <button type="button">Третье предложение</button>
+          <li>
+            <button class="slider-control" type="button">Третье предложение</button>
           </li>
         </ul>
       </section>
@@ -115,32 +115,32 @@
       <section class="hits">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="hits-list">
-          <li class="hits-item">
+          <li class="catalog-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-1.jpg" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой." width="267" height="267">
-            <p class="hit-price">310 ₽<span>/кг</span></p>
-            <a class="hit-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <p class="catalog-price">310 ₽<span>/кг</span></p>
+            <a class="catalog-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-2.jpg" alt="Фото сливочно-кофейного мороженого с кусочками шоколада." width="267" height="267">
-            <p class="hit-price">380 ₽<span>/кг</span></p>
-            <a class="hit-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <p class="catalog-price">380 ₽<span>/кг</span></p>
+            <a class="catalog-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-3.jpg" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада." width="267" height="267">
-            <p class="hit-price">355 ₽<span>/кг</span></p>
-            <a class="hit-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <p class="catalog-price">355 ₽<span>/кг</span></p>
+            <a class="catalog-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <button class="btn" type="button">Быстрый просмотр</button>
           </li>
-          <li class="hits-item">
+          <li class="catalog-item">
             <span class="hit-icon"></span>
             <img src="img/catalog/item-4.jpg" alt="Фото сливочного мороженого крем-брюле с карамельной подливкой." width="267" height="267">
-            <p class="hit-price">415 ₽<span>/кг</span></p>
-            <a class="hit-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <p class="catalog-price">415 ₽<span>/кг</span></p>
+            <a class="catalog-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             <button class="btn" type="button">Быстрый просмотр</button>
           </li>
         </ul>
@@ -159,17 +159,28 @@
         <h2>Новое в нашем блоге</h2>
         <a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <section class="subscribe">
-        <h2 class="visually-hidden">Рассылка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Форма подписки -->
-      </section>
+      <div class="subscribe-bg">
+        <section class="subscribe">
+          <h2 class="visually-hidden">Рассылка</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="feedback-mail">Электронная почта</label>
+            <input id="subscribe-mail" type="email" name="mail" placeholder="Электронная почта">
+            <button class="btn">Отправить</button>
+          </form>
+        </section>
+      </div>
       <section class="map">
         <h2 class="visually-hidden">Контактная информация</h2>
         <span class="map-point"></span>
         <div class="map-description">
-          <p>Адрес главного офиса и офлайн-магазина: <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-          <p>Для заказов по телефону: <b><a href="tel:+78124502525">8 812 450-25-25</a></b> (с 10 до 20 ежедневно)</p>
+          <p>
+            Адрес главного офиса<br>
+            и офлайн-магазина:<br>
+            <b>ул. Большая Конюшенная<br>
+              19/8, Санкт-Петербург</b></p>
+          <p>Для заказов по телефону:<br><b><a href="tel:+78124502525">8 812 450-25-25</a></b><br>
+            (с 10 до 20 ежедневно)</p>
           <button class="btn">Форма обратной связи</button>
         </div>
       </section>
