@@ -174,27 +174,37 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <span class="map-point"></span>
         <div class="map-description">
-          <p>
-            Адрес главного офиса<br>
+          <p>Адрес главного офиса<br>
             и офлайн-магазина:<br>
             <b>ул. Большая Конюшенная<br>
-              19/8, Санкт-Петербург</b></p>
-          <p>Для заказов по телефону:<br><b><a href="tel:+78124502525">8 812 450-25-25</a></b><br>
-            (с 10 до 20 ежедневно)</p>
+              19/8, Санкт-Петербург</b>
+          </p>
+          <p>Для заказов по телефону:<br>
+            <b><a href="tel:+78124502525">8 812 450-25-25</a></b><br>
+            (с 10 до 20 ежедневно)
+          </p>
           <button class="btn">Форма обратной связи</button>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
-        <li class="social-twitter"><a href="#">Twitter</a></li>
-        <li class="social-instagram"><a href="#">Instagram</a></li>
-        <li class="social-facebook"><a href="#">Facebook</a></li>
-        <li class="social-vkontakte"><a href="#">ВКонтакте</a></li>
+        <li>
+          <a class="social-twitter" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="social-instagram" href="#">Instagram</a>
+        </li>
+        <li>
+          <a class="social-facebook" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="social-vkontakte" href="#">ВКонтакте</a>
+        </li>
       </ul>
       <ul class="footer-menu">
         <li>
-          <a href="#">Для поставщиков</a>
+          <a class="footer-menu-favorite" href="#"><b>Для поставщиков</b></a>
         </li>
         <li>
           <a href="#">О производстве</a>
@@ -207,28 +217,30 @@
         </li>
       </ul>
       <p class="footer-copyright">
-          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">Профессиональный HTML и CSS, уровень 1</a>
+          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">Профессиональный HTML и CSS, уровень 1</a><br>
           Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
     </footer>
-    <section id="modal-feedback">
-      <h2>Мы обязательно вам ответим</h2>
-      <button class="feedback-close">Закрыть</button>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-          <input id="feedback-name" name="name" placeholder="Как вас зовут?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="feedback-mail">Электронная почта</label>
-          <input id="feedback-mail" type="email" name="mail" placeholder="Ваша почта для ответа?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="feedback-text">Текст сообщения</label>
-          <textarea id="feedback-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
-        </p>
-        <button class="btn">Отправить</button>
-      </form>
-    </section>
+    <div class="modal">
+      <section class="modal-feedback" id="modal-feedback">
+        <h2>Мы обязательно вам ответим</h2>
+        <button class="feedback-close">Закрыть</button>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+            <input id="feedback-name" name="name" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback-mail">Электронная почта</label>
+            <input id="feedback-mail" type="email" name="mail" placeholder="Ваша почта для ответа?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback-text">Текст сообщения</label>
+            <textarea id="feedback-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
+          </p>
+          <button class="btn">Отправить</button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
