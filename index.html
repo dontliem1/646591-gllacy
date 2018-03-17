@@ -27,7 +27,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation-item">
-            <button class="user-search" type="button">Поиск</button>
+            <button class="user-search" type="button" aria-label="Поиск"></button>
             <section class="popup popup-search">
               <h2 class="visually-hidden">Строка поиска</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -87,13 +87,13 @@
         </ul>
         <ul class="slider-controls">
           <li>
-            <button class="slider-control slider-active" type="button">Первое предложение</button>
+            <button class="slider-control slider-active" type="button" aria-label="Первое предложение"></button>
           </li>
           <li>
-            <button class="slider-control" type="button">Второе предложение</button>
+            <button class="slider-control" type="button" aria-label="Второе предложение"></button>
           </li>
           <li>
-            <button class="slider-control" type="button">Третье предложение</button>
+            <button class="slider-control" type="button" aria-label="Третье предложение"></button>
           </li>
         </ul>
       </section>
@@ -190,16 +190,16 @@
     <footer class="main-footer">
       <ul class="footer-social">
         <li>
-          <a class="social-twitter" href="#">Twitter</a>
+          <a class="social-button social-twitter" href="#" aria-label="Twitter"></a>
         </li>
         <li>
-          <a class="social-instagram" href="#">Instagram</a>
+          <a class="social-button social-instagram" href="#" aria-label="Instagram"></a>
         </li>
         <li>
-          <a class="social-facebook" href="#">Facebook</a>
+          <a class="social-button social-facebook" href="#" aria-label="Facebook"></a>
         </li>
         <li>
-          <a class="social-vkontakte" href="#">ВКонтакте</a>
+          <a class="social-button social-vkontakte" href="#" aria-label="ВКонтакте"></a>
         </li>
       </ul>
       <ul class="footer-menu">
@@ -217,14 +217,17 @@
         </li>
       </ul>
       <p class="footer-copyright">
-          <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">Профессиональный HTML и CSS, уровень 1</a><br>
-          Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный HTML и CSS, уровень 1">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
+        <br>
+        Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
     </footer>
     <div class="modal">
       <section class="modal-feedback" id="modal-feedback">
         <h2>Мы обязательно вам ответим</h2>
-        <button class="feedback-close">Закрыть</button>
+        <button class="feedback-close" aria-label="Закрыть"></button>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="feedback-name">Ваше имя</label>

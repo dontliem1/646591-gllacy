@@ -27,7 +27,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation-item">
-            <button class="user-search" type="button">Поиск</button>
+            <button class="user-search" type="button" aria-label="Поиск"></button>
             <section class="popup popup-search">
               <h2 class="visually-hidden">Строка поиска</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -63,14 +63,14 @@
               <h2 class="visually-hidden">Корзина</h2>
               <table class="cart-table">
                 <tr>
-                  <td><button class="cart-delete" type="button">Удалить товар</button></td>
+                  <td><button class="cart-delete" type="button" aria-label="Удалить товар"></button></td>
                   <td><img src="img/catalog/item-small-1.jpg" alt="Фото сливочного мороженого с апельсиновым джемом и цитрусовой стружкой." width="33" height="33"></td>
                   <td>Пломбир с апельсиновым джемом</td>
                   <td>1,5 кг x <span class="cart-price">200 руб.</span></td>
                   <td>300 руб.</td>
                 </tr>
                 <tr>
-                  <td><button class="cart-delete" type="button">Удалить товар</button></td>
+                  <td><button class="cart-delete" type="button" aria-label="Удалить товар"></button></td>
                   <td><img src="img/catalog/item-small-3.jpg" alt="Фото сливочно-клубничного мороженого с присыпкой из белого шоколада." width="33" height="33"></td>
                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td>1,5 кг x <span class="cart-price">300 руб.</span></td>
@@ -245,29 +245,29 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li><a class="pagination-previous pagination-inactive" >Предыдущая страница</a></li>
+          <li><a class="pagination-previous pagination-inactive" aria-label="Предыдущая страница"></a></li>
           <li><a class="pagination-item pagination-current">1</a></li>
           <li><a class="pagination-item" href="#">2</a></li>
           <li><a class="pagination-item" href="#">3</a></li>
           <li><a class="pagination-item" href="#">4</a></li>
           <li><a class="pagination-item" href="#">5</a></li>
-          <li><a class="pagination-next" href="#">Следующая страница</a></li>
+          <li><a class="pagination-next" href="#" aria-label="Следующая страница"></a></li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
         <li>
-          <a class="social-twitter" href="#">Twitter</a>
+          <a class="social-button social-twitter" href="#" aria-label="Twitter"></a>
         </li>
         <li>
-          <a class="social-instagram" href="#">Instagram</a>
+          <a class="social-button social-instagram" href="#" aria-label="Instagram"></a>
         </li>
         <li>
-          <a class="social-facebook" href="#">Facebook</a>
+          <a class="social-button social-facebook" href="#" aria-label="Facebook"></a>
         </li>
         <li>
-          <a class="social-vkontakte" href="#">ВКонтакте</a>
+          <a class="social-button social-vkontakte" href="#" aria-label="ВКонтакте"></a>
         </li>
       </ul>
       <ul class="footer-menu">
@@ -285,7 +285,10 @@
         </li>
       </ul>
       <p class="footer-copyright">
-        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">Профессиональный HTML и CSS, уровень 1</a><br>
+        <a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный HTML и CSS, уровень 1">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+        </a>
+        <br>
         Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
     </footer>
