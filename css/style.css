@@ -410,6 +410,11 @@ html {
   color: #ffffff;
 }
 
+.main-phone:hover,
+.main-phone:focus {
+  color: #e84d37;
+}
+
 /*Основное содержимое*/
 
 .slider-item {
@@ -580,9 +585,14 @@ html {
   font-size: 24px;
   line-height: 30px;
   color: #353535;
-  text-decoration: underline solid #353535;
+  text-decoration: underline;
 
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.blog-link:hover,
+.blog-link:focus {
+  color: #e84d37;
 }
 
 .subscribe-bg {
@@ -627,8 +637,14 @@ html {
   font-size: 18px;
   line-height: 24px;
 }
+
 .map-description a {
   color: #323232;
+}
+
+.map-description a:hover,
+.map-description a:focus {
+  color: #e84d37;
 }
 
 /*Футер*/
