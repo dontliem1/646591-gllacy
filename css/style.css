@@ -3,6 +3,8 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 9px;
+  min-width: 900px;
 
   font-weight: 400;
   font-size: 16px;
@@ -29,6 +31,13 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+  margin: auto;
 }
 
 .user-navigation input,
@@ -186,6 +195,15 @@ html {
 
 /*Хэдер*/
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  margin-right: auto;
+}
+
 .site-navigation-item > a {
   margin-left: 14px;
 
@@ -238,6 +256,8 @@ html {
   background-color: #d07058;
 }
 
+.catalog-nav {display:none}
+
 .catalog-nav a {
   display: block;
 
@@ -269,7 +289,7 @@ html {
 
 .popup-search,
 .popup-login {
-  padding: 20px 15px;
+  padding: 20px 15px; display:none
 }
 
 .popup-login p {
@@ -398,10 +418,12 @@ html {
   border-top: 1px solid #cacac7;
 }
 
-.main-header > p {
+header > p {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  float: right;
+  text-align: right;
 }
 
 .main-phone {
@@ -417,11 +439,21 @@ html {
 
 /*Основное содержимое*/
 
+.slider {
+  margin: 0 auto;
+  padding-top: 400px;
+}
+
 .slider-item {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
   text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+  padding-top: 390px;
+  position: absolute;
+  top:0;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -435,11 +467,13 @@ html {
 .slider-item:nth-child(2) {
   background-color: #8996a6;
   background-image: url("../img/slides/slide-2.png");
+  display: none;
 }
 
 .slider-item:last-child {
   background-color: #9d8b84;
   background-image: url("../img/slides/slide-3.png");
+  display: none;
 }
 
 .slider-control {
@@ -461,8 +495,16 @@ html {
   background-color: white;
 }
 
+.banners-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
 .banner-item {
   background-position: center;
+  max-width: 560px;
 }
 
 .banner-item p {
