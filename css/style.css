@@ -1,17 +1,19 @@
 /*Глобальные стили*/
 body {
+  position: relative;
+
+  min-width: 1200px;
+  height: 100%;
   margin: 0;
   padding: 0;
   padding-top: 9px;
-  min-width: 1200px;
-  height:100%;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
-  position: relative;
+
   background-color: #849d8f;
 }
 
@@ -35,9 +37,10 @@ html {
 
 .container {
   max-width: 1200px;
-  padding-left: 27px;
-  padding-right: 27px;
   margin: auto;
+  padding-right: 27px;
+  padding-left: 27px;
+
   outline: 3px solid blue;
 }
 
@@ -199,6 +202,7 @@ html {
   display: flex;
   justify-content: space-between;
   height: 64px;
+
   outline: 1px solid red;
 }
 
@@ -207,9 +211,10 @@ html {
 }
 
 .site-navigation {
-  margin-right: auto;
-  outline: 2px solid yellow;
   width: 400px;
+  margin-right: auto;
+
+  outline: 2px solid yellow;
 }
 
 .site-navigation-item > a {
@@ -264,7 +269,9 @@ html {
   background-color: #d07058;
 }
 
-.catalog-nav {display:none}
+.catalog-nav {
+  display: none;
+}
 
 .catalog-nav a {
   display: block;
@@ -297,7 +304,8 @@ html {
 
 .popup-search,
 .popup-login {
-  padding: 20px 15px; display:none
+  display: none;;
+  padding: 20px 15px;
 }
 
 .popup-login p {
@@ -309,8 +317,9 @@ html {
 }
 
 .user-navigation {
-  outline: 2px solid yellow;
   width: 267px;
+
+  outline: 2px solid yellow;
 }
 
 .user-navigation input {
@@ -436,10 +445,11 @@ html {
 }
 
 header > p {
+  float: right;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  float: right;
   text-align: right;
 }
 
@@ -470,22 +480,25 @@ header > p {
   font-size: 60px;
   line-height: 60px;
   text-align: center;
+
   outline: 1px solid yellow;
 }
 
-.slider-item .slider-bg{
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+.slider-item .slider-bg {
   position: absolute;
-  top:0;
+  top: 0;
+  z-index: -1;
+
   width: 100%;
   height: 100%;
-  z-index: -1;
+
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .slider-item:first-child .slider-bg {
-  background-image: url("../img/slides/slide-1.png");
   background-color: #849d8f;
+  background-image: url("../img/slides/slide-1.png");
 }
 
 .slider-item:nth-child(2) {
@@ -493,9 +506,10 @@ header > p {
 }
 
 .slider-item:nth-child(2) .slider-bg {
+  display: none;
+
   background-color: #8996a6;
   background-image: url("../img/slides/slide-2.png");
-  display: none;
 }
 
 .slider-item:nth-child(3) {
@@ -507,9 +521,10 @@ header > p {
   background-image: url("../img/slides/slide-3.png");
 }
 
-.slider-item>p {
+.slider-item > p {
   max-width: 700px;
   margin: 0 auto 21px auto;
+
   outline: 1px solid red;
 }
 
@@ -522,11 +537,13 @@ header > p {
 }
 
 .slider-controls {
-  padding: 0;
   position: absolute;
   bottom: 30px;
   left: 28px;
+
   height: 21px;
+  padding: 0;
+
   outline: 1px solid red;
 }
 
@@ -550,9 +567,10 @@ header > p {
 }
 
 .banners {
-  margin-bottom: 36px;
-  outline: 2px solid red;
   min-height: 229px;
+  margin-bottom: 36px;
+
+  outline: 2px solid red;
 }
 
 .banners-list {
@@ -562,8 +580,9 @@ header > p {
 }
 
 .banner-item {
-  background-position: center;
   max-width: 560px;
+
+  background-position: center;
   outline: 1px solid yellow;
 }
 
@@ -589,23 +608,26 @@ header > p {
 }
 
 .hit-icon {
+  position: absolute;
+
   display: block;
   width: 61px;
   height: 61px;
-  position: absolute;
 
   background-image: url("../img/hit.svg");
 }
 
 .catalog-item {
-  text-align: center;
-  max-width: 293px;
   position: relative;
 
-  border-radius: 5px;
-  padding: 6px 13px 75px 13px;
-  outline: 1px solid yellow;
+  max-width: 293px;
   margin-bottom: -35px;
+  padding: 6px 13px 75px 13px;
+
+  text-align: center;
+
+  border-radius: 5px;
+  outline: 1px solid yellow;
 }
 
 .catalog-item:first-child,
@@ -618,10 +640,11 @@ header > p {
 }
 
 .catalog-item button {
-  display: none;
   position: absolute;
   bottom: 20px;
   left: 35px;
+
+  display: none;
 }
 
 .catalog-item:hover {
@@ -629,24 +652,28 @@ header > p {
 }
 
 .catalog-item:hover button {
-  display: block;
   z-index: 1;
+
+  display: block;
 }
 
 .catalog-item img {
-  border-radius: 50%;
   margin-bottom: 5px;
+
+  border-radius: 50%;
 }
 
 .catalog-price {
+  position: absolute;
+  top: 215px;
+
+  margin: 0;
+
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
   text-align: left;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
-  position: absolute;
-  margin: 0;
-  top: 215px;
 }
 
 .catalog-price span {
@@ -654,22 +681,24 @@ header > p {
 }
 
 .catalog-link {
+  margin-bottom: 60px;
+
   font-weight: 500;
   color: #ffffff;
-  margin-bottom: 60px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .features {
+  min-height: 306px;
+  margin-top: -25px;
+
   color: #323232;
 
   background-color: #ece0c6;
   background-image: url("../img/waffle-bg.jpg");
   border-radius: 15px;
   outline: 1px solid yellow;
-  min-height: 306px;
-  margin-top:-25px;
 }
 
 .features-lead {
@@ -703,13 +732,16 @@ header > p {
 .blog-subscribe {
   display: flex;
   justify-content: space-between;
+  min-height: 220px;
   margin-top: 40px;
   margin-bottom: 40px;
+
   outline: 2px solid red;
-  min-height: 220px;
 }
 
 .blog {
+  width: 560px;
+
   color: #5a5a5a;
 
   background-color: #ffffff;
@@ -719,7 +751,6 @@ header > p {
   background-size: cover;
   border-radius: 15px;
   outline: 1px solid yellow;
-  width: 560px;
 }
 
 .blog h2 {
@@ -744,13 +775,15 @@ header > p {
 }
 
 .subscribe-bg {
-  padding: 5px;
   width: 560px;
+  padding: 5px;
+
   color: #5a5a5a;
-  outline: 1px solid yellow;
+
   background-color: #f8f7f4;
   background-image: repeating-linear-gradient(-45deg, #f8f7f4, #f8f7f4 6px, #92cdff 6px, #92cdff 12px, #f8f7f4 12px, #f8f7f4 18px, #fe9e90 18px, #fe9e90 24px);
   border-radius: 15px;
+  outline: 1px solid yellow;
 }
 
 .subscribe {
@@ -759,9 +792,10 @@ header > p {
 }
 
 .map {
-  color: #000000;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  color: #000000;
 
   background-color: #f7f1d9;
   background-image: url("../img/map-bg.jpg");
@@ -772,11 +806,11 @@ header > p {
 
 .map-description {
   display: block;
-  padding-right: 25px;
-  padding-left: 25px;
-  margin-left: auto;
   max-width: 302px;
   min-height: 305px;
+  margin-left: auto;
+  padding-right: 25px;
+  padding-left: 25px;
 
   font-size: 14px;
   line-height: 20px;
@@ -805,21 +839,23 @@ header > p {
 
 .main-footer {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-content: center;
   height: 108px;
-  outline: 2px solid red;
   margin-bottom: 25px;
   padding-top: 18px;
+
+  outline: 2px solid red;
 }
 
 .footer-social {
-  outline: 1px solid yellow;
   min-width: 200px;
   height: 38px;
   margin: 0;
   padding: 0;
+
+  outline: 1px solid yellow;
 }
 
 .social-button {
@@ -864,11 +900,12 @@ header > p {
 }
 
 .footer-menu {
-  outline: 1px solid yellow;
   width: 330px;
   min-height: 38px;
   margin: 0;
   padding: 0;
+
+  outline: 1px solid yellow;
 }
 
 .footer-menu a {
@@ -886,7 +923,7 @@ header > p {
 .footer-menu-favorite::before {
   content: "";
   position: absolute;
-  top: 2px;;
+  top: 2px;
   left: -22px;
 
   display: inline-block;
@@ -895,15 +932,17 @@ header > p {
 
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
-  background-position: 0 50%;
+  background-position: 0 50%;;
 }
 
 .footer-copyright {
-  font-size: 12px;
-  line-height: 18px;
-  outline: 1px solid yellow;
   min-height: 60px;
   margin-top: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  outline: 1px solid yellow;
 }
 
 .footer-copyright-link {
@@ -927,8 +966,8 @@ header > p {
 
 .modal-feedback {
   max-width: 477px;
-  margin: auto;
   min-height: 442px;
+  margin: auto;
 }
 
 .modal-feedback h2 {
@@ -969,13 +1008,15 @@ header > p {
 /*Каталог*/
 
 .breadcrumbs {
-  font-size: 14px;
-  line-height: 16px;
-  outline: 2px solid yellow;
   display: flex;
-  padding: 0;
   margin-top: 28px;
   margin-bottom: 5px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  outline: 2px solid yellow;
 }
 
 .breadcrumbs a[href] {
@@ -987,23 +1028,26 @@ header > p {
 .breadcrumbs li:not(:last-child)::after {
   content: "»";
 
-  margin-left: 8px;
   margin-right: 8px;
+  margin-left: 8px;
 }
 
 .catalog-title {
+  margin-top: 0;
+
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
+
   outline: 1px solid red;
-  margin-top: 0;
 }
 
 .filter {
-  outline: 2px solid yellow;
   max-width: 880px;
   min-height: 130px;
-  margin-bottom:32px;
+  margin-bottom: 32px;
+
+  outline: 2px solid yellow;
 }
 
 .filter-form {
@@ -1012,9 +1056,10 @@ header > p {
 }
 
 .filter fieldset {
-  border: none;
-  padding: 0;
   margin-right: 16px;
+  padding: 0;
+
+  border: none;
 }
 
 .filter legend {
@@ -1082,14 +1127,16 @@ header > p {
   padding-right: 20px;
   padding-left: 20px;
 
+  font-size: 0;
+
   background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
-  font-size: 0;
 }
 
 .filter-range span {
   display: inline-block;
+  box-sizing: content-box;
   width: 4px;
   height: 4px;
 
@@ -1100,7 +1147,6 @@ header > p {
   border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  box-sizing: content-box;
 }
 
 .filter-range span:hover {
@@ -1132,11 +1178,11 @@ header > p {
 
 .filter-group {
   min-height: 36px;
+  margin: 0;
+  padding: 0;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
-  margin: 0;
-  padding: 0;
 }
 
 .filter-group li {
@@ -1226,15 +1272,17 @@ header > p {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0;
+
   outline: 2px solid red;
-  padding-left:0;
 }
 
 .pagination-list {
-  outline: 1px solid red;
   display: flex;
   justify-content: flex-end;
   padding: 0;
+
+  outline: 1px solid red;
 }
 .pagination-list a {
   display: inline-block;
@@ -1273,11 +1321,10 @@ header > p {
 }
 
 .pagination-previous {
-  transform: rotate(180deg);
-
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transform: rotate(180deg);
 }
 
 .pagination-previous:active,
@@ -1290,5 +1337,5 @@ header > p {
 }
 
 .inner-footer {
-  border-top: 1px solid rgba(255,255,255,.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
 }
