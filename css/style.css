@@ -12,6 +12,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
   position: relative;
+  background-color: #849d8f;
 }
 
 a {
@@ -37,6 +38,7 @@ html {
   padding-left: 27px;
   padding-right: 27px;
   margin: auto;
+  outline: 3px solid blue;
 }
 
 .user-navigation input,
@@ -168,7 +170,6 @@ html {
 .slider-list,
 .slider-controls,
 .banners-list,
-.hits-list,
 .features-list,
 .footer-social,
 .footer-menu,
@@ -201,8 +202,14 @@ html {
   outline: 1px solid red;
 }
 
+.main-header-logo {
+  outline: 2px solid yellow;
+}
+
 .site-navigation {
   margin-right: auto;
+  outline: 2px solid yellow;
+  width: 400px;
 }
 
 .site-navigation-item > a {
@@ -301,6 +308,11 @@ html {
   margin-bottom: 0;
 }
 
+.user-navigation {
+  outline: 2px solid yellow;
+  width: 267px;
+}
+
 .user-navigation input {
   width: 100%;
 }
@@ -371,6 +383,10 @@ html {
   color: #e84d37;
 
   border-bottom-color: rgba(236, 89, 60, 0.3);
+}
+
+.cart {
+  display: none;
 }
 
 .user-cart {
@@ -454,12 +470,12 @@ header > p {
   font-size: 60px;
   line-height: 60px;
   text-align: center;
+  outline: 1px solid yellow;
 }
 
 .slider-item .slider-bg{
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-color: #849d8f;
   position: absolute;
   top:0;
   width: 100%;
@@ -469,6 +485,7 @@ header > p {
 
 .slider-item:first-child .slider-bg {
   background-image: url("../img/slides/slide-1.png");
+  background-color: #849d8f;
 }
 
 .slider-item:nth-child(2) {
@@ -493,6 +510,7 @@ header > p {
 .slider-item>p {
   max-width: 700px;
   margin: 0 auto 21px auto;
+  outline: 1px solid red;
 }
 
 .slider-item .btn {
@@ -533,7 +551,7 @@ header > p {
 
 .banners {
   margin-bottom: 36px;
-  outline: 1px solid red;
+  outline: 2px solid red;
   min-height: 229px;
 }
 
@@ -546,6 +564,7 @@ header > p {
 .banner-item {
   background-position: center;
   max-width: 560px;
+  outline: 1px solid yellow;
 }
 
 .banner-item p {
@@ -569,13 +588,6 @@ header > p {
   background-image: url("../img/chocolate-bg.jpg");
 }
 
-.hits-list {
-  display: flex;
-  padding: 0;
-  margin-left: -13px;
-  outline: 1px solid red;
-}
-
 .hit-icon {
   display: block;
   width: 61px;
@@ -592,6 +604,17 @@ header > p {
 
   border-radius: 5px;
   padding: 6px 13px 75px 13px;
+  outline: 1px solid yellow;
+  margin-bottom: -35px;
+}
+
+.catalog-item:first-child,
+.catalog-item:nth-child(4n+1) {
+  margin-left: -13px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: -13px;
 }
 
 .catalog-item button {
@@ -607,6 +630,7 @@ header > p {
 
 .catalog-item:hover button {
   display: block;
+  z-index: 1;
 }
 
 .catalog-item img {
@@ -639,13 +663,13 @@ header > p {
 
 .features {
   color: #323232;
-  margin-top:-60px;
 
   background-color: #ece0c6;
   background-image: url("../img/waffle-bg.jpg");
   border-radius: 15px;
   outline: 1px solid yellow;
   min-height: 306px;
+  margin-top:-25px;
 }
 
 .features-lead {
@@ -681,7 +705,7 @@ header > p {
   justify-content: space-between;
   margin-top: 40px;
   margin-bottom: 40px;
-  outline: 1px solid red;
+  outline: 2px solid red;
   min-height: 220px;
 }
 
@@ -694,7 +718,7 @@ header > p {
   background-position: center;
   background-size: cover;
   border-radius: 15px;
-
+  outline: 1px solid yellow;
   width: 560px;
 }
 
@@ -723,7 +747,7 @@ header > p {
   padding: 5px;
   width: 560px;
   color: #5a5a5a;
-
+  outline: 1px solid yellow;
   background-color: #f8f7f4;
   background-image: repeating-linear-gradient(-45deg, #f8f7f4, #f8f7f4 6px, #92cdff 6px, #92cdff 12px, #f8f7f4 12px, #f8f7f4 18px, #fe9e90 18px, #fe9e90 24px);
   border-radius: 15px;
@@ -760,6 +784,7 @@ header > p {
 
   background-color: #fdfefe;
   border-radius: 15px;
+  outline: 1px solid yellow;
 }
 
 .map-description b {
@@ -781,10 +806,20 @@ header > p {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  height: 60px;
-  outline: 1px solid red;
-  margin-top: 18px;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 108px;
+  outline: 2px solid red;
   margin-bottom: 25px;
+  padding-top: 18px;
+}
+
+.footer-social {
+  outline: 1px solid yellow;
+  min-width: 200px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
 }
 
 .social-button {
@@ -828,6 +863,14 @@ header > p {
   opacity: 0.8;
 }
 
+.footer-menu {
+  outline: 1px solid yellow;
+  width: 330px;
+  min-height: 38px;
+  margin: 0;
+  padding: 0;
+}
+
 .footer-menu a {
   font-size: 13px;
   line-height: 18px;
@@ -858,6 +901,9 @@ header > p {
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
+  outline: 1px solid yellow;
+  min-height: 60px;
+  margin-top: 0;
 }
 
 .footer-copyright-link {
@@ -882,6 +928,7 @@ header > p {
 .modal-feedback {
   max-width: 477px;
   margin: auto;
+  min-height: 442px;
 }
 
 .modal-feedback h2 {
@@ -924,6 +971,11 @@ header > p {
 .breadcrumbs {
   font-size: 14px;
   line-height: 16px;
+  outline: 2px solid yellow;
+  display: flex;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 5px;
 }
 
 .breadcrumbs a[href] {
@@ -936,16 +988,33 @@ header > p {
   content: "»";
 
   margin-left: 8px;
+  margin-right: 8px;
 }
 
 .catalog-title {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
+  outline: 1px solid red;
+  margin-top: 0;
+}
+
+.filter {
+  outline: 2px solid yellow;
+  max-width: 880px;
+  min-height: 130px;
+  margin-bottom:32px;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter fieldset {
   border: none;
+  padding: 0;
+  margin-right: 16px;
 }
 
 .filter legend {
@@ -1016,6 +1085,7 @@ header > p {
   background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
+  font-size: 0;
 }
 
 .filter-range span {
@@ -1030,6 +1100,7 @@ header > p {
   border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .filter-range span:hover {
@@ -1064,6 +1135,8 @@ header > p {
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-group li {
@@ -1150,6 +1223,19 @@ header > p {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid red;
+  padding-left:0;
+}
+
+.pagination-list {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
 .pagination-list a {
   display: inline-block;
   min-width: 26px;
@@ -1201,4 +1287,8 @@ header > p {
 
 .pagination-inactive {
   opacity: 0.2;
+}
+
+.inner-footer {
+  border-top: 1px solid rgba(255,255,255,.3);
 }
