@@ -36,8 +36,6 @@ html {
   margin: 0 auto;
   padding-right: 27px;
   padding-left: 27px;
-
-  outline: 2px solid blue;
 }
 
 .user-navigation input,
@@ -113,6 +111,7 @@ html {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  vertical-align: middle;
   color: #ffffff;
 
   background: linear-gradient(#f26843, #e74a35) #e84d37;
@@ -151,8 +150,8 @@ html {
   box-shadow: inset 0 2px 2px 0 #942718;
 }
 
-.catalog-link:hover,
-.catalog-link:focus,
+.catalog-link:hover span,
+.catalog-link:focus span,
 .footer-menu a:hover,
 .footer-menu a:focus,
 .footer-copyright-link:hover,
@@ -171,32 +170,28 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 9px;
-
-  outline: 1px solid red;
 }
 
 .main-header-logo {
   margin-right: 9px;
-
-  outline: 2px solid yellow;
 }
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
   margin-top: 14px;
   margin-right: auto;
   padding: 0;
 
   list-style: none;
-
-  outline: 2px solid yellow;
 }
 
-.site-navigation li {
+.site-navigation-item {
   position: relative;
 }
 
-.site-navigation-item > a {
+.site-navigation-link {
   display: block;
   width: 100%;
   padding: 7px 14px;
@@ -209,18 +204,23 @@ html {
   border-radius: 16px;
 }
 
-.site-navigation-item span {
+.site-navigation-link span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.site-navigation-item:hover a:not(.navigation-current),
-.site-navigation-item > a:focus {
+.site-navigation-item:hover .site-navigation-link:not(.navigation-current),
+.site-navigation-link:focus {
   color: #333333;
 
   background-color: #f7f6f3;
 }
 
-.site-navigation-item > a:active:not(.navigation-current) {
+.site-navigation-item:hover span,
+.site-navigation-link:focus span {
+  border-bottom: 0;
+}
+
+.site-navigation-link:active:not(.navigation-current) {
   color: #333333;
 
   background-color: #ededed;
@@ -230,7 +230,6 @@ html {
 .navigation-current > span {
   border-bottom: 0;
 }
-
 
 .navigation-current,
 .catalog-current {
@@ -352,8 +351,6 @@ html {
   margin-top: 14px;
 
   list-style: none;
-
-  outline: 2px solid yellow;
 }
 
 .user-navigation input {
@@ -396,8 +393,7 @@ html {
 }
 
 .user-search {
-  background-image: url("../img/loupe.svg");
-  background-position: 7px 7px;
+  background: url("../img/loupe.svg") 7px 7px;
 }
 
 .user-navigation-item:hover .user-search,
@@ -526,6 +522,13 @@ html {
   border: none;
 }
 
+.cart-img {
+  width: 33px;
+  height: 33px;
+
+  border-radius: 50%;
+}
+
 .cart-sum {
   font-size: 15px;
   line-height: 18px;
@@ -557,6 +560,7 @@ html {
 
   font-size: 22px;
   line-height: 24px;
+  vertical-align: middle;
   color: #ffffff;
 }
 
@@ -568,9 +572,7 @@ html {
 /*Основное содержимое*/
 
 .slider {
-  margin-bottom: 19px;
-
-  outline: 2px solid red;
+  margin-bottom: 20px;
 }
 
 .slider-list {
@@ -581,14 +583,12 @@ html {
 }
 
 .slider-item {
-  margin-top: 306px;
+  margin-top: 305px;
 
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
   text-align: center;
-
-  outline: 1px solid yellow;
 }
 
 .slider-item .slider-bg {
@@ -633,8 +633,6 @@ html {
 .slider-item > p {
   max-width: 700px;
   margin: 0 auto 22px auto;
-
-  outline: 1px solid red;
 }
 
 .slider-controls {
@@ -646,8 +644,6 @@ html {
   padding: 0;
 
   list-style: none;
-
-  outline: 1px solid red;
 }
 
 .slider-control {
@@ -672,8 +668,6 @@ html {
 
 .banners {
   margin-bottom: 33px;
-
-  outline: 2px solid red;
 }
 
 .banners-list {
@@ -693,8 +687,8 @@ html {
   padding: 16px 21px 25px 18px;
 
   background-position: center;
+  background-size: cover;
   border-radius: 14px;
-  outline: 1px solid yellow;
 }
 
 .banner-item h3 {
@@ -747,7 +741,6 @@ html {
   padding: 6px 13px 75px 13px;
 
   border-radius: 5px;
-  outline: 1px solid yellow;
 }
 
 .catalog-item:first-child,
@@ -787,7 +780,7 @@ html {
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.catalog-price span {
+.catalog-price > span {
   font-size: 30px;
 }
 
@@ -800,11 +793,11 @@ html {
   color: #ffffff;
 }
 
-.catalog-link span {
+.catalog-link > span {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.catalog-item button {
+.catalog-item .btn {
   position: absolute;
   bottom: 20px;
   left: 45px;
@@ -824,7 +817,6 @@ html {
   background-color: #ece0c6;
   background-image: url("../img/waffle-bg.jpg");
   border-radius: 15px;
-  outline: 1px solid yellow;
 }
 
 .features-lead {
@@ -877,8 +869,6 @@ html {
   display: flex;
   justify-content: space-between;
   margin-bottom: 42px;
-
-  outline: 2px solid red;
 }
 
 .blog {
@@ -889,7 +879,6 @@ html {
 
   background: url("../img/strawberry-bg.jpg") no-repeat 106px -79px #ffffff;
   border-radius: 15px;
-  outline: 1px solid yellow;
 }
 
 .blog h2 {
@@ -921,10 +910,8 @@ html {
 
   color: #5a5a5a;
 
-  background-color: #f8f7f4;
-  background-image: repeating-linear-gradient(-45deg, #f8f7f4, #f8f7f4 6px, #92cdff 6px, #92cdff 12px, #f8f7f4 12px, #f8f7f4 18px, #fe9e90 18px, #fe9e90 24px);
+  background: url("../img/post-bg.svg") center/cover #f8f7f4;
   border-radius: 15px;
-  outline: 1px solid yellow;
 }
 
 .subscribe {
@@ -955,6 +942,8 @@ html {
 }
 
 .map {
+  position: relative;
+
   margin-bottom: 20px;
   padding-top: 62px;
   padding-bottom: 66px;
@@ -964,7 +953,19 @@ html {
   background: url("../img/map-bg.jpg") no-repeat center/cover #f7f1d9;
 }
 
+.map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
 .map-description {
+  z-index: 5;
+
   display: block;
   max-width: 302px;
   margin-left: auto;
@@ -976,7 +977,6 @@ html {
 
   background-color: #fdfefe;
   border-radius: 15px;
-  outline: 1px solid yellow;
 }
 
 .map-description b {
@@ -1021,8 +1021,6 @@ html {
   padding: 0;
 
   list-style: none;
-
-  outline: 1px solid yellow;
 }
 
 .social-button {
@@ -1031,6 +1029,7 @@ html {
   height: 38px;
   margin-right: 11px;
 
+  vertical-align: middle;
   color: #e6ebe9;
 
   background-repeat: no-repeat;
@@ -1076,8 +1075,6 @@ html {
   padding: 0;
 
   list-style: none;
-
-  outline: 1px solid yellow;
 }
 
 .footer-menu > li:nth-child(2n-1) {
@@ -1116,8 +1113,6 @@ html {
 
   font-size: 12px;
   line-height: 18px;
-
-  outline: 1px solid yellow;
 }
 
 .footer-copyright-link {
@@ -1129,7 +1124,7 @@ html {
 /*Модальные окна*/
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1143,7 +1138,7 @@ html {
 .modal > section {
   position: relative;
 
-  margin: 338px auto 0;
+  margin: auto;
   padding: 16px 25px 25px;
 
   color: #323232;
@@ -1153,7 +1148,7 @@ html {
 }
 
 .modal-feedback {
-  max-width: 477px;
+  width: 477px;
 }
 
 .modal-feedback h2 {
@@ -1229,8 +1224,6 @@ html {
   list-style: none;
   font-size: 14px;
   line-height: 16px;
-
-  outline: 2px solid yellow;
 }
 
 .breadcrumbs a[href] {
@@ -1253,15 +1246,11 @@ html {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
-
-  outline: 1px solid red;
 }
 
 .filter {
   max-width: 920px;
   margin-bottom: 22px;
-
-  outline: 2px solid yellow;
 }
 
 .filter-form {
@@ -1340,6 +1329,7 @@ html {
   padding: 7px 20px 8px;
 
   font-size: 0;
+  vertical-align: middle;
 
   background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1399,9 +1389,16 @@ html {
   border-radius: 18px;
 }
 
+.filter-radio:disabled ~ label,
+.filter-checkbox:disabled ~ label {
+  opacity: 0.4;
+}
+
 .filter-group li {
   display: inline-block;
   padding-top: 5px;
+
+  vertical-align: middle;
 }
 
 .filter-group label {
@@ -1426,8 +1423,12 @@ html {
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  cursor: pointer;
   opacity: 0.8;
+}
+
+.filter-radio:enabled ~ label::before,
+.filter-checkbox:enabled ~ label::before {
+  cursor: pointer;
 }
 
 .filter-radio:checked ~ label::before {
@@ -1447,7 +1448,6 @@ html {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -1461,9 +1461,9 @@ html {
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-radios label:hover::before,
+.filter-radio:enabled ~ label:hover::before,
 .filter-radio:focus ~ label::before,
-.filter-checks label:hover::before,
+.filter-checks:enabled label:hover::before,
 .filter-checkbox:focus ~ label::before {
   opacity: 1;
 }
@@ -1502,8 +1502,6 @@ html {
   padding-left: 0;
 
   list-style: none;
-
-  outline: 2px solid red;
 }
 
 .pagination-list {
@@ -1513,8 +1511,6 @@ html {
   padding: 0;
 
   list-style: none;
-
-  outline: 1px solid red;
 }
 
 .pagination-item {
@@ -1525,6 +1521,7 @@ html {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  vertical-align: middle;
   color: white;
 
   border-radius: 13px;
@@ -1552,6 +1549,8 @@ html {
   display: inline-block;
   width: 10px;
   height: 100%;
+
+  vertical-align: middle;
 
   background: url("../img/icon-right-small.svg") no-repeat;
 }

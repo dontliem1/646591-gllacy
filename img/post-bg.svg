@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+	 x="0px" y="0px" viewBox="0 0 560 220" xml:space="preserve">
+<path fill="#F8F7F4" d="M560,205c0,8.3-6.8,15-15,15H15c-8.3,0-15-6.8-15-15V15C0,6.8,6.8,0,15,0h530c8.3,0,15,6.8,15,15V205z"/>
+<g>
+	<path fill="#F8F7F4" d="M545,0H20.7L0,20.7V205c0,8.3,6.8,15,15,15h530c8.3,0,15-6.8,15-15V15C560,6.8,553.3,0,545,0z"/>
+	<path fill="#F8F7F4" d="M10.2,0.8c-4.4,1.5-8,5-9.5,9.5L10.2,0.8z"/>
+</g>
+<path fill="#92CDFF" d="M20.7,0H15c-1.7,0-3.2,0.3-4.7,0.8l-9.5,9.5C0.3,11.8,0,13.3,0,15v5.7L20.7,0z"/>
+<polygon fill="#FE9E90" points="0,40.1 40.1,0 30.4,0 0,30.4 "/>
+<polygon fill="#92CDFF" points="0,59.5 59.5,0 49.8,0 0,49.8 "/>
+<polygon fill="#FE9E90" points="0,78.9 78.9,0 69.2,0 0,69.2 "/>
+<polygon fill="#92CDFF" points="0,98.3 98.3,0 88.6,0 0,88.6 "/>
+<polygon fill="#FE9E90" points="0,117.7 117.7,0 108,0 0,108 "/>
+<polygon fill="#92CDFF" points="0,137.1 137.1,0 127.4,0 0,127.4 "/>
+<polygon fill="#FE9E90" points="0,156.4 156.4,0 146.7,0 0,146.7 "/>
+<polygon fill="#92CDFF" points="0,175.8 175.8,0 166.1,0 0,166.1 "/>
+<polygon fill="#FE9E90" points="0,195.2 195.2,0 185.5,0 0,185.5 "/>
+<path fill="#92CDFF" d="M204.9,0L0,204.9v0.1c0,2.7,0.8,5.3,2.1,7.5L214.6,0H204.9z"/>
+<path fill="#FE9E90" d="M14,220L234,0h-9.7L6.8,217.5C8.9,218.9,11.4,219.8,14,220z"/>
+<polygon fill="#92CDFF" points="33.4,220 253.4,0 243.7,0 23.7,220 "/>
+<polygon fill="#FE9E90" points="52.8,220 272.8,0 263.1,0 43.1,220 "/>
+<polygon fill="#92CDFF" points="72.1,220 292.1,0 282.5,0 62.5,220 "/>
+<polygon fill="#FE9E90" points="91.5,220 311.5,0 301.8,0 81.8,220 "/>
+<polygon fill="#92CDFF" points="110.9,220 330.9,0 321.2,0 101.2,220 "/>
+<polygon fill="#FE9E90" points="130.3,220 350.3,0 340.6,0 120.6,220 "/>
+<polygon fill="#92CDFF" points="149.7,220 369.7,0 360,0 140,220 "/>
+<polygon fill="#FE9E90" points="169.1,220 389.1,0 379.4,0 159.4,220 "/>
+<polygon fill="#92CDFF" points="188.5,220 408.5,0 398.8,0 178.8,220 "/>
+<polygon fill="#FE9E90" points="207.9,220 427.9,0 418.2,0 198.2,220 "/>
+<polygon fill="#92CDFF" points="227.2,220 447.2,0 437.6,0 217.6,220 "/>
+<polygon fill="#FE9E90" points="246.6,220 466.6,0 456.9,0 236.9,220 "/>
+<polygon fill="#92CDFF" points="266,220 486,0 476.3,0 256.3,220 "/>
+<polygon fill="#FE9E90" points="285.4,220 505.4,0 495.7,0 275.7,220 "/>
+<polygon fill="#92CDFF" points="304.8,220 524.8,0 515.1,0 295.1,220 "/>
+<polygon fill="#FE9E90" points="324.2,220 544.2,0 534.5,0 314.5,220 "/>
+<path fill="#92CDFF" d="M343.6,220L557.2,6.3c-1.3-1.9-3.1-3.5-5.1-4.6L333.9,220H343.6z"/>
+<path fill="#FE9E90" d="M363,220L560,23v-8c0-0.6,0-1.1-0.1-1.6L353.3,220H363z"/>
+<polygon fill="#92CDFF" points="382.3,220 560,42.3 560,32.6 372.6,220 "/>
+<polygon fill="#FE9E90" points="401.7,220 560,61.7 560,52 392,220 "/>
+<polygon fill="#92CDFF" points="421.1,220 560,81.1 560,71.4 411.4,220 "/>
+<polygon fill="#FE9E90" points="440.5,220 560,100.5 560,90.8 430.8,220 "/>
+<polygon fill="#92CDFF" points="459.9,220 560,119.9 560,110.2 450.2,220 "/>
+<polygon fill="#FE9E90" points="479.3,220 560,139.3 560,129.6 469.6,220 "/>
+<polygon fill="#92CDFF" points="498.7,220 560,158.7 560,149 489,220 "/>
+<polygon fill="#FE9E90" points="518.1,220 560,178.1 560,168.4 508.4,220 "/>
+<polygon fill="#92CDFF" points="537.4,220 560,197.4 560,187.7 527.7,220 "/>
+<path fill="#FE9E90" d="M559.8,207.3l-12.5,12.5C553.7,218.8,558.8,213.7,559.8,207.3z"/>
+</svg>
