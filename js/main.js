@@ -57,8 +57,8 @@ form.addEventListener("submit", function (evt) {
     console.log("Введите электронную почту и вопрос.");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("name", login.value);
-      localStorage.setItem("mail", login.value);
+      localStorage.setItem("name", name.value);
+      localStorage.setItem("mail", mail.value);
     }
   }
 });
