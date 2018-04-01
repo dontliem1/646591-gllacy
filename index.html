@@ -8,6 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
     <header class="container">
       <nav class="main-header">
         <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Глэйси»."></a>
@@ -72,41 +76,30 @@
       </p>
     </header>
     <main>
-        <h1 class="visually-hidden">Магазин «Глэйси»</h1>
+      <div class="container">
+      <h1 class="visually-hidden">Магазин «Глэйси»</h1>
         <section class="slider">
-          <div class="container">
+          <div class="slider-controls">
+            <label for="product-1">Первое предложение</label>
+            <label for="product-2">Второе предложение</label>
+            <label for="product-3">Третье предложение</label>
+          </div>
           <h2 class="visually-hidden">Предложения для двоих</h2>
           <ul class="slider-list">
-            <li class="slider-item">
-              <div class="slider-bg"></div>
-              <p>Крем-брюле и пломбир с&nbsp;малиновым джемом</p>
-              <a href="#" class="btn btn-lg">Давайте оба!</a>
+            <li class="slide">
+              <h3 class="slide-title">Крем-брюле и пломбир с&nbsp;малиновым джемом</h3>
+              <a class="btn btn-lg" href="#">Давайте оба!</a>
             </li>
-            <li class="slider-item">
-              <div class="slider-bg"></div>
-              <p>Шоколадный пломбир и&nbsp;лимонный сорбет</p>
-              <a href="#" class="btn btn-lg">Давайте оба!</a>
+            <li class="slide">
+              <h3 class="slide-title">Шоколадный пломбир и&nbsp;лимонный сорбет</h3>
+              <a class="btn btn-lg" href="#">Давайте оба!</a>
             </li>
-            <li class="slider-item">
-              <div class="slider-bg"></div>
-              <p>Пломбир с помадкой и&nbsp;клубничный щербет</p>
-              <a href="#" class="btn btn-lg">Давайте оба!</a>
+            <li class="slide">
+              <h3 class="slide-title">Пломбир с помадкой и&nbsp;клубничный щербет</h3>
+              <a class="btn btn-lg" href="#">Давайте оба!</a>
             </li>
           </ul>
-            <ul class="slider-controls">
-              <li>
-                <button class="slider-control slider-active" type="button"><span class="visually-hidden">Первое предложение</span></button>
-              </li>
-              <li>
-                <button class="slider-control" type="button"><span class="visually-hidden">Второе предложение</span></button>
-              </li>
-              <li>
-                <button class="slider-control" type="button"><span class="visually-hidden">Третье предложение</span></button>
-              </li>
-            </ul>
-          </div>
         </section>
-      <div class="container">
         <section class="banners">
           <h2 class="visually-hidden">Акции</h2>
           <ul class="banners-list">
@@ -184,10 +177,9 @@
         </div>
       </div>
       <section class="map">
-        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522500828015" width="1200" height="430" frameborder="0" allowfullscreen></iframe>
+        <iframe class="map-iframe" title="Интерактивная карта Google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522500828015" width="1200" height="430" allowfullscreen></iframe>
         <div class="container">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <span class="map-point"></span>
           <div class="map-description">
             <p>Адрес главного офиса<br>
               и офлайн-магазина:<br>
@@ -198,7 +190,7 @@
               <b><a href="tel:+78124502525">8 812 450-25-25</a></b><br>
               (с 10 до 20 ежедневно)
             </p>
-            <button class="btn js-modal-feedback" type="button">Форма обратной связи</button>
+            <button class="btn js-modal" type="button">Форма обратной связи</button>
           </div>
         </div>
       </section>
@@ -240,10 +232,11 @@
         Сделано в <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
     </footer>
+  </div>
     <div class="modal">
       <section class="modal-feedback">
         <h2>Мы обязательно вам ответим!</h2>
-        <button class="feedback-close"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
+        <button class="modal-close"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="feedback-name">Ваше имя: </label>
@@ -261,5 +254,6 @@
         </form>
       </section>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
