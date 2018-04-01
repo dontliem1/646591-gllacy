@@ -315,11 +315,10 @@ html {
 .popup-search {
   position: absolute;
   right: 0;
+  z-index: 3;
 
   display: none;
   padding: 20px 15px;
-
-  z-index:3;
 }
 
 .popup-search input {
@@ -329,11 +328,11 @@ html {
 .popup-login {
   position: absolute;
   right: -2px;
+  z-index: 3;
 
   display: none;
   margin-top: 5px;
   padding: 19px 17px 22px 19px;
-  z-index:3;
 }
 
 .login-form {
@@ -570,6 +569,9 @@ html {
 }
 
 .main-time {
+  position: relative;
+  z-index: 2;
+
   margin-top: -6px;
   margin-bottom: -32px;
 
@@ -577,8 +579,6 @@ html {
   font-size: 14px;
   line-height: 16px;
   text-align: right;
-  position: relative;
-  z-index:2;
 }
 
 .main-phone {
