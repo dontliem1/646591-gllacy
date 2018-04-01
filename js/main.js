@@ -11,7 +11,7 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-  storage = localStorage.getItem("mail");
+  storage = localStorage.getItem("mailControl");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -57,8 +57,8 @@ form.addEventListener("submit", function (evt) {
     console.log("Введите электронную почту и вопрос.");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("name", nameControl.value);
-      localStorage.setItem("mail", mailControl.value);
+      localStorage.setItem("nameControl", nameControl.value);
+      localStorage.setItem("mailControl", mailControl.value);
     }
   }
 });
