@@ -1364,6 +1364,9 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
 /*Каталог*/
 
 .breadcrumbs {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   max-width: 920px;
   margin-bottom: 5px;
