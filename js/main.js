@@ -3,9 +3,9 @@ var modal = document.querySelector(".modal");
 var close = modal.querySelector(".modal-close");
 var form = modal.querySelector("form");
 
-var name = modal.querySelector("[name=name]");
-var mail = modal.querySelector("[name=mail]");
-var question = modal.querySelector("textarea");
+var nameControl = modal.querySelector("[name=name]");
+var mailControl = modal.querySelector("[name=mail]");
+var questionControl = modal.querySelector("textarea");
 
 var isStorageSupport = true;
 var storage = "";
@@ -20,15 +20,15 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.add("modal-show");
   if (storage) {
-    name.value = storage;
+    nameControl.value = storage;
     if (storage) {
-      mail.value = storage;
-      question.focus();
+      mailControl.value = storage;
+      questionControl.focus();
     } else {
-      mail.focus();
+      mailControl.focus();
     }
   } else {
-    name.focus();
+    nameControl.focus();
   }
 });
 
@@ -49,7 +49,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!mail.value || !question.value) {
+  if (!mailControl.value || !questionControl.value) {
     evt.preventDefault();
     form.classList.remove("modal-error");
     form.offsetWidth = form.offsetWidth;
@@ -57,8 +57,8 @@ form.addEventListener("submit", function (evt) {
     console.log("Введите электронную почту и вопрос.");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("name", name.value);
-      localStorage.setItem("mail", mail.value);
+      localStorage.setItem("name", nameControl.value);
+      localStorage.setItem("mail", mailControl.value);
     }
   }
 });
