@@ -1,7 +1,7 @@
 var link = document.querySelector(".js-modal");
 var modal = document.querySelector(".modal");
 var close = modal.querySelector(".modal-close");
-var form = modal.querySelector("form");
+var form = modal.querySelector(".feedback-form");
 
 var nameControl = modal.querySelector("[name=name]");
 var mailControl = modal.querySelector("[name=mail]");
