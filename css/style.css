@@ -735,7 +735,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 }
 
 .special-item p {
-  margin-top: 14px;
+  margin-top: 16px;
 
   font-weight: 700;
   font-size: 18px;
@@ -743,7 +743,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 
 .special-item .btn {
   align-self: flex-end;
-  margin-top: auto;
+  margin-top: 26px;
 }
 
 .special-berry {
@@ -845,7 +845,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 .features {
   margin-top: -40px;
   margin-bottom: 40px;
-  padding: 25px 24px 22px 20px;
+  padding: 25px 24px 24px 20px;
 
   color: #323232;
 
@@ -904,12 +904,12 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .blog {
   width: 560px;
-  padding: 12px 250px 20px 20px;
+  padding: 10px 250px 20px 20px;
 
   color: #5a5a5a;
 
@@ -951,7 +951,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 }
 
 .subscribe {
-  padding: 32px 20px;
+  padding: 28px 20px 36px;
 
   background-color: #f8f7f4;
   border-radius: 8px;
@@ -1355,6 +1355,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 .catalog-title {
   max-width: 920px;
   margin-top: 0;
+  margin-bottom: 25px;
 
   font-weight: 700;
   font-size: 35px;
@@ -1363,7 +1364,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 
 .filter {
   max-width: 920px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .filter-form {
@@ -1612,7 +1613,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   padding-left: 0;
 
   list-style: none;
