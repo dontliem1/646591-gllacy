@@ -1203,6 +1203,7 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
   right: 0;
   bottom: 0;
   left: 0;
+
   display: none;
 
   background-color: rgba(0, 0, 0, 0.3);
@@ -1478,10 +1479,11 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
   border-radius: 18px;
 }
 
-.filter-range span {
+.filter-range button {
   display: inline-block;
   width: 20px;
   height: 20px;
+  padding: 0;
 
   vertical-align: middle;
 
@@ -1492,7 +1494,8 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
   cursor: pointer;
 }
 
-.filter-range span:hover {
+.filter-range button:hover,
+.filter-range button:focus {
   box-shadow: 0 0 0 1px white;
 }
 
