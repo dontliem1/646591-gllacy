@@ -1216,7 +1216,7 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
 .modal > section {
   position: relative;
 
-  margin: 338px auto;
+  margin: 100px auto;
   padding: 16px 25px 25px;
 
   color: #323232;
