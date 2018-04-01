@@ -1203,7 +1203,7 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
   right: 0;
   bottom: 0;
   left: 0;
-  /*display: none;*/
+  display: none;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
