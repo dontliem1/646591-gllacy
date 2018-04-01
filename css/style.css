@@ -1271,6 +1271,17 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
   line-height: 24px;
 }
 
+/*Edge*/
+.feedback-form textarea::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+/*IE11*/
+.feedback-form textarea:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .feedback-form textarea {
   width: 100%;
   min-height: 155px;
@@ -1284,7 +1295,6 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
   border-radius: 5px;
 }
 
-.feedback-form textarea:hover,
 .feedback-form textarea:focus {
   padding-top: 7px;
 }
