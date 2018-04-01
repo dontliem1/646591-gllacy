@@ -170,7 +170,7 @@ html {
 }
 
 .btn-lg {
-  padding: 10px 40px;
+  padding: 8px 40px 10px;
 
   font-size: 32px;
   line-height: 44px;
@@ -625,7 +625,7 @@ html {
   position: relative;
 
   margin-bottom: 42px;
-  padding-top: 305px;
+  padding-top: 308px;
 
   text-align: center;
   color: #ffffff;
@@ -756,6 +756,10 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
   background-image: url("../img/chocolate-bg.jpg");
 }
 
+.hits-catalog {
+  margin-bottom: 45px;
+}
+
 .hit-icon {
   position: absolute;
   top: 6px;
@@ -845,7 +849,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 .features {
   margin-top: -40px;
   margin-bottom: 40px;
-  padding: 25px 24px 24px 20px;
+  padding: 25px 24px 15px 20px;
 
   color: #323232;
 
@@ -855,7 +859,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 }
 
 .features-lead {
-  margin: 0;
+  margin: 0 0 8px;
 
   font-weight: 500;
   font-size: 24px;
@@ -873,7 +877,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 
 .features-list li {
   max-width: 535px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   padding-top: 12px;
   padding-left: 56px;
 
@@ -1613,7 +1617,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 48px;
+  margin: 0;
   padding-left: 0;
 
   list-style: none;
@@ -1622,6 +1626,7 @@ input[name="toggle"]:nth-child(3):checked ~ .site-wrapper label[for="product-3"]
 .pagination-list {
   display: flex;
   justify-content: flex-end;
+  margin-top: 48px;
   margin-bottom: 30px;
   padding: 0;
 
