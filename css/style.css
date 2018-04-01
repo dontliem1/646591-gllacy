@@ -1197,13 +1197,13 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
 }
 
 .modal-show {
-  display: flex;
+  display: block;
 }
 
 .modal > section {
   position: relative;
 
-  margin: auto;
+  margin: 338px auto;
   padding: 16px 25px 25px;
 
   color: #323232;
@@ -1290,7 +1290,7 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
 }
 
 .feedback-form .btn {
-  margin-left: auto;
+  align-self: flex-end;
 }
 
 @keyframes bounce {
