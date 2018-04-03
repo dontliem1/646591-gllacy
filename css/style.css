@@ -80,26 +80,6 @@ html {
   color: #999999;
 }
 
-/*Edge*/
-.user-navigation input::-ms-input-placeholder,
-.subscribe-form input::-ms-input-placeholder,
-.modal input::-ms-input-placeholder,
-.modal textarea::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: #999999;
-}
-
-/*IE11*/
-.user-navigation input:-ms-input-placeholder,
-.subscribe-form input:-ms-input-placeholder,
-.modal input:-ms-input-placeholder,
-.modal textarea:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  color: #999999;
-}
-
 .user-navigation input:hover,
 .subscribe-form input:hover,
 .modal input:hover,
@@ -991,18 +971,6 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
   line-height: 24px;
 }
 
-/*Edge*/
-.subscribe input::-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/*IE11*/
-.subscribe input:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .subscribe .btn {
   padding-right: 18px;
   padding-left: 18px;
@@ -1267,29 +1235,6 @@ input[name="toggle"]:nth-child(3):not(:checked) ~ .site-wrapper label[for="produ
 
 .feedback-form input::placeholder,
 .feedback-form textarea::placeholder {
-  font-size: 16px;
-  line-height: 24px;
-}
-/*Edge*/
-.feedback-form input::-ms-input-placeholder,
-.feedback-form textarea::-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 24px;
-}
-/*IE11*/
-.feedback-form input:-ms-input-placeholder,
-.feedback-form textarea:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/*Edge*/
-.feedback-form textarea::-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 24px;
-}
-/*IE11*/
-.feedback-form textarea:-ms-input-placeholder {
   font-size: 16px;
   line-height: 24px;
 }
